@@ -1,4 +1,3 @@
-import cookieParser from 'cookie-parser'
 import express from 'express'
 import cors from 'cors'
 import { config } from './config/config'
@@ -10,7 +9,6 @@ import feedbackRouter from './routes/feedbackRoutes'
 const app = express()
 
 app.use(express.json())
-// app.use(cookieParser())
 
 app.use(
     cors({
